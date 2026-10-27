@@ -1,0 +1,724 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/GrapeSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/GrapeSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Tajawal";
+  src: url("/fonts/GrapeArabic-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Tajawal";
+  src: url("/fonts/GrapeArabic-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Root Variables */
+:root {
+  /* Основная палитра */
+
+  --color-navbar: #58427c; /* Цвет навбара (хедер) и футера */
+  --color-buttons: #58427c; /* Цвет кнопок */
+  --color-dark-cards-bg: #58427c; /* Цвет фона темных карточек */
+  --color-light-cards-text: #77c3dd; /* Цвет текста на светлых карточках */
+  --color-icons-on-light-cards: #77c3dd; /* Цвет иконок на светлых карточках */
+  --color-footer-bg: #58427c; /* Цвет фона футера */
+  --color-headings-draft: #58427c; /* Цвет заголовков в разработке */
+
+  --color-gradient-start: #77c3dd; /* Начало градиента */
+  --color-gradient-end: #58427c; /* Конец градиента */
+
+  --color-dark-text-on-dark-elements: #e0e0e0; /* Текст на тёмных элементах */
+  --color-gradient-reviews-start: #f2f4f7; /* Градиент отзывов (начало) */
+  --color-gradient-reviews-end: #ece7f3; /* Градиент отзывов (конец) */
+
+  --color-site-background: #f2f0f5; /* Фоновый цвет сайта (фон страницы) */
+  --color-card-inner-bg: #f2f0f5; /* Фон внутренней части карточек */
+
+  --color-muted-text: #4c484b; /* Цвет подписей, описаний */
+  --color-primary-text: #2b2b2b; /* Основной цвет текста (заголовки, основной текст) */
+  --color-black-text: #000000; /* Черный цвет текста */
+  --color-headings-text: #2b2b2b; /* Цвет заголовков */
+}
+/* Dark Mode */
+.dark {
+  --color-navbar: #58427c;
+  --color-buttons: #6b4fa8;
+  --color-dark-cards-bg: #252729;
+  --color-light-cards-text: #4dd4e8;
+  --color-icons-on-light-cards: #4dd4e8;
+  --color-footer-bg: #3a2b55;
+  --color-headings-draft: #9b7de0;
+  --color-gradient-start: #4dd4e8;
+  --color-gradient-end: #6b4fa8;
+  --color-dark-text-on-dark-elements: #e8eaed;
+  --color-gradient-reviews-start: #1a1c20;
+  --color-gradient-reviews-end: #252729;
+  --color-site-background: #1a1c20;
+  --color-card-inner-bg: #252729;
+  --color-muted-text: #9ba3b4;
+  --color-primary-text: #e8eaed;
+  --color-black-text: #ffffff;
+  --color-headings-text: #e8eaed;
+}
+
+/* Удобные классы для быстрого использования */
+
+.bg-navbar {
+  background-color: var(--color-navbar); /* Фон навбара */
+}
+
+.text-buttons {
+  color: var(--color-buttons); /* Цвет текста кнопок */
+}
+
+.bg-dark-cards {
+  background-color: var(--color-dark-cards-bg); /* Фон темных карточек */
+}
+
+.text-light-cards {
+  color: var(--color-light-cards-text); /* Текст светлых карточек */
+}
+
+.text-icons-on-light-cards {
+  color: var(--color-icons-on-light-cards); /* Иконки на светлых карточках */
+}
+
+.bg-footer {
+  background-color: var(--color-footer-bg); /* Фон футера */
+}
+
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.text-headings-draft {
+  color: var(--color-headings-draft); /* Заголовки в разработке */
+}
+
+.bg-gradient-start {
+  background-color: var(--color-gradient-start); /* Начало градиента */
+}
+
+.bg-gradient-end {
+  background-color: var(--color-gradient-end); /* Конец градиента */
+}
+
+.text-dark-text-on-dark-elements {
+  color: var(
+    --color-dark-text-on-dark-elements
+  ); /* Текст на темных элементах */
+}
+
+.bg-gradient-reviews-start {
+  background-color: var(
+    --color-gradient-reviews-start
+  ); /* Начало градиента отзывов */
+}
+
+.bg-gradient-reviews-end {
+  background-color: var(
+    --color-gradient-reviews-end
+  ); /* Конец градиента отзывов */
+}
+
+.bg-site {
+  background-color: var(--color-site-background); /* Фон сайта */
+}
+
+.bg-card-inner {
+  background-color: var(--color-card-inner-bg);
+}
+
+.text-muted {
+  color: var(--color-muted-text); /* Подписи, описания */
+}
+@media (max-width: 639px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+.text-primary {
+  color: var(--color-primary-text); /* Основной текст */
+}
+
+.text-black {
+  color: var(--color-black-text); /* Черный текст */
+}
+
+.text-headings {
+  color: var(--color-headings-text); /* Цвет заголовков */
+}
+
+.text-content .header-anchor {
+  visibility: hidden;
+}
+
+.text-content h1:hover .header-anchor,
+.text-content h2:hover .header-anchor,
+.text-content h3:hover .header-anchor,
+.text-content h4:hover .header-anchor,
+.text-content h5:hover .header-anchor,
+.text-content h6:hover .header-anchor {
+  visibility: visible;
+}
+
+.text-content h1 {
+  text-align: center;
+  font-size: 27px;
+  margin-bottom: 30px;
+  color: var(--color-headings-draft);
+}
+
+.text-content h2 {
+  text-align: center;
+  font-size: 25px;
+  margin: 60px 0;
+  color: var(--color-headings-draft);
+}
+
+.privacy-policy-content h2 {
+  text-align: left;
+}
+
+.terms-of-use-content h2 {
+  text-align: left;
+}
+
+.privacy-policy-content ul {
+  margin: 16px 0 24px;
+  padding-left: 0;
+}
+
+.terms-of-use-content ul {
+  margin: 16px 0 24px;
+  padding-left: 0;
+}
+
+.privacy-policy-content p,
+.privacy-policy-content li,
+.privacy-policy-content ol > li {
+  color: var(--color-primary-text);
+}
+
+.privacy-policy-content p + p {
+  color: var(--color-primary-text);
+}
+
+.privacy-policy-content ul > li {
+  list-style: none;
+  position: relative;
+  padding-left: 18px;
+  margin: 12px 0;
+  color: var(--color-primary-text);
+  font-size: 16px;
+}
+
+.terms-of-use-content ul > li {
+  list-style: none;
+  position: relative;
+  padding-left: 18px;
+  margin: 12px 0;
+  color: inherit;
+  font-size: 16px;
+}
+
+.privacy-policy-content ul > li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: inherit;
+}
+
+.terms-of-use-content ul > li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: inherit;
+}
+
+.text-content h3 {
+  text-align: center;
+  font-size: 20px;
+  margin: 45px 0;
+  color: var(--color-headings-draft);
+}
+
+.text-content p + p {
+  margin-top: 25px;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+.text-content span {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+}
+
+.text-content ol > li {
+  color: var(--color-headings-draft);
+  font-size: 25px;
+  margin: 40px 0 20px 0;
+}
+
+.text-content ol > li ul > li {
+  color: var(--color-primary-text);
+  font-size: 16px;
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.text-content a,
+em {
+  color: var(--color-headings-draft);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.input-field {
+  @apply w-full p-3 bg-slate-300 rounded-xl text-black mt-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 ease-in-out;
+}
+
+/* Global Body Styles */
+html {
+  background-color: var(--color-site-background);
+}
+
+.font-sans-local {
+  font-family: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-arabic {
+  font-family: "Tajawal", "Montserrat", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-site-background);
+  color: var(--color-primary-text);
+}
+
+html.dark body.antialiased {
+  background-color: var(--color-site-background);
+  color: var(--color-primary-text);
+}
+
+/* Utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Components */
+@layer components {
+  /* Button styles */
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight;
+  }
+
+  .btn-primary {
+    @apply btn bg-black text-white relative overflow-hidden;
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06),
+      inset 0 2px 4px 0 rgba(255, 255, 255, 0.06),
+      inset 0 -2px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    @apply bg-gray-900;
+    box-shadow:
+      0 6px 8px -2px rgba(0, 0, 0, 0.12),
+      0 4px 6px -2px rgba(0, 0, 0, 0.08),
+      inset 0 2px 4px 0 rgba(255, 255, 255, 0.08),
+      inset 0 -2px 4px 0 rgba(0, 0, 0, 0.18);
+    transform: translateY(-2px);
+  }
+
+  .btn-primary:active {
+    @apply bg-gray-800;
+    box-shadow:
+      0 2px 4px -1px rgba(0, 0, 0, 0.1),
+      0 1px 2px -1px rgba(0, 0, 0, 0.06),
+      inset 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+      inset 0 -2px 4px 0 rgba(255, 255, 255, 0.05);
+    transform: translateY(1px);
+  }
+
+  .btn-inverse {
+    @apply btn bg-white text-black relative overflow-hidden;
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.05),
+      0 2px 4px -1px rgba(0, 0, 0, 0.03),
+      inset 0 2px 4px 0 rgba(0, 0, 0, 0.03),
+      inset 0 -2px 4px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .btn-inverse:hover {
+    @apply bg-gray-100;
+    box-shadow:
+      0 6px 8px -2px rgba(0, 0, 0, 0.08),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05),
+      inset 0 2px 4px 0 rgba(0, 0, 0, 0.04),
+      inset 0 -2px 4px 0 rgba(255, 255, 255, 0.12);
+    transform: translateY(-2px);
+  }
+
+  .btn-inverse:active {
+    @apply bg-gray-200;
+    box-shadow:
+      0 2px 4px -1px rgba(0, 0, 0, 0.06),
+      0 1px 2px -1px rgba(0, 0, 0, 0.03),
+      inset 0 2px 4px 0 rgba(0, 0, 0, 0.06),
+      inset 0 -2px 4px 0 rgba(255, 255, 255, 0.08);
+    transform: translateY(1px);
+  }
+
+  .btn-text {
+    @apply btn text-black bg-transparent;
+  }
+
+  /* Layout */
+  .centered-content-container {
+    @apply flex flex-col items-center md:max-w-[540px] mx-auto;
+  }
+  .scrollbar-hide {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+.logo-float-animation {
+  animation: floatAnimation 3s ease-in-out infinite alternate;
+}
+
+@keyframes gradient-x {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 3s ease infinite;
+}
+
+.transform-gpu {
+  transform: translateZ(0);
+}
+/* Markdown Content Styles */
+.markdown-content {
+  @apply text-black leading-relaxed;
+}
+
+/* Headings */
+.markdown-content h1 {
+  @apply text-[32px] font-semibold mb-6 mt-8;
+  color: var(--color-headings-text);
+}
+
+.markdown-content h2 {
+  @apply text-[28px] font-semibold mb-6 mt-8;
+  color: var(--color-headings-text);
+}
+
+.markdown-content h3 {
+  @apply text-[24px] font-semibold mb-6 mt-8 text-center;
+  color: var(--color-headings-draft);
+}
+
+.markdown-content h4 {
+  @apply text-[20px] font-semibold mb-2;
+  color: var(--color-headings-text);
+}
+
+.markdown-content h5 {
+  @apply text-[18px] font-semibold mb-2;
+  color: var(--color-headings-text);
+}
+
+.markdown-content h6 {
+  @apply text-[16px] font-semibold mb-2;
+  color: var(--color-headings-text);
+}
+
+/* Paragraphs */
+.markdown-content p {
+  @apply mb-8 leading-relaxed;
+}
+
+/* Links */
+.markdown-content a {
+  @apply hover:underline;
+  color: var(--color-headings-draft);
+}
+
+/* Lists */
+.markdown-content ul {
+  @apply space-y-6 mb-8;
+}
+
+.markdown-content ol {
+  @apply space-y-6 mb-8 list-decimal list-inside;
+}
+
+.markdown-content li {
+  @apply mb-2;
+}
+
+.markdown-content ul > li {
+  @apply relative pl-4;
+}
+
+.markdown-content ul > li::before {
+  content: "•";
+  @apply absolute left-0 font-semibold;
+}
+
+/* Strong/Bold */
+.markdown-content strong,
+.markdown-content b {
+  @apply font-semibold;
+}
+
+/* Emphasis/Italic */
+.markdown-content em,
+.markdown-content i {
+  @apply italic;
+}
+
+/* Code Blocks */
+.markdown-content pre {
+  @apply bg-gray-900 text-white p-6 rounded-[24px] overflow-x-auto mb-8;
+}
+
+/* Language Dropdown Styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #9333ea;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #7e22ce;
+}
+
+kbd {
+  padding: 0.15rem 0.4rem;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-family: monospace;
+}
+
+.markdown-content code {
+  @apply bg-gray-100 px-2 py-1 rounded text-sm;
+}
+
+.markdown-content pre code {
+  @apply bg-transparent p-0;
+}
+
+/* Blockquotes */
+.markdown-content blockquote {
+  @apply border-l-4 border-[#4D3680] pl-6 py-2 mb-8 italic text-gray-700;
+}
+
+/* Horizontal Rule */
+.markdown-content hr {
+  @apply border-t border-gray-200 my-8;
+}
+
+/* Tables */
+.markdown-content table {
+  @apply w-full border-collapse mb-8;
+}
+
+.markdown-content th {
+  @apply bg-gray-100 font-semibold text-left p-4 border border-gray-200;
+}
+
+.markdown-content td {
+  @apply p-4 border border-gray-200;
+}
+
+/* Task Lists */
+.markdown-content .task-list-item {
+  @apply list-none;
+}
+
+.markdown-content .task-list-item input[type="checkbox"] {
+  @apply mr-2;
+}
+
+/* Images */
+.markdown-content img {
+  @apply rounded-[24px] mb-8 w-full;
+}
+
+/* Footnotes */
+.markdown-content .footnotes {
+  @apply mt-12 pt-8 border-t border-gray-200 text-sm;
+}
+
+.markdown-content .footnote-ref {
+  @apply text-[#4D3680] no-underline;
+}
+
+.markdown-content .footnote-backref {
+  @apply text-[#4D3680] no-underline ml-2;
+}
+/* ========================================
+   Dark Mode Overrides
+   ======================================== */
+
+/* Hero Section */
+.dark .content .bg-background {
+  background-color: var(--color-site-background) !important;
+}
+
+.dark .content .text-textPrimary {
+  color: var(--color-primary-text) !important;
+}
+
+/* Header - Language Dropdown */
+.dark .content .bg-white {
+  background-color: #1e1a29 !important;
+}
+
+.dark .content .text-gray-700 {
+  color: #e8e8e8 !important;
+}
+
+.dark .content .text-gray-500 {
+  color: #a0a0a0 !important;
+}
+
+.dark .content .text-gray-400 {
+  color: #888888 !important;
+}
+
+.dark .content .bg-gray-50 {
+  background-color: #252131 !important;
+}
+
+.dark .content .bg-purple-50 {
+  background-color: #2d2640 !important;
+}
+
+.dark .content .bg-purple-100 {
+  background-color: #3d3654 !important;
+}
+
+.dark .content .hover\:bg-gray-50:hover {
+  background-color: #2d2640 !important;
+}
+
+.dark .content .border-gray-200,
+.dark .content .border-gray-300 {
+  border-color: #3d3654 !important;
+}
+
+.dark .content .border-purple-200 {
+  border-color: #4d3680 !important;
+}
+/* Development Directions Cards */
+
+.dark .content .text-\[\#58427C\] {
+  color: #a0a0a0 !important;
+}
+.dark .content .text-\[\#2B2B2B\] {
+  color: #e8e8e8 !important;
+}
+.dark .content .text-\[\#58427C\] {
+  color: #888888 !important;
+}
+.dark .content .bg-\[\#EDEBFA\] {
+  background-color: #2d2640 !important;
+}
+.dark .content .text-\[\#58427C\] {
+  color: #a78bdb !important;
+}
+
+/* Dark Mode - Icons to white */
+.dark .content .icon-dark-mode {
+  filter: brightness(0) invert(1);
+}
+
+/* Smooth theme transition - applies only during toggle */
+html.theme-transitioning *,
+html.theme-transitioning *::before,
+html.theme-transitioning *::after {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    filter 0.3s ease !important;
+  transition-delay: 0s !important;
+}

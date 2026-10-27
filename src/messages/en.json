@@ -1,0 +1,653 @@
+{
+  "Header": {
+    "grapelab": "GrapeLab",
+    "cases": "Cases",
+    "team": "Team",
+    "contacts": "Contacts",
+    "services": "Services",
+    "blog": "Blog",
+    "advertising": "Advertising",
+    "partners": "Partners",
+    "community": "Community",
+    "langActive": "Active",
+    "langEscHint": "Press ESC to close"
+  },
+  "Hero": {
+    "title": "Software Development Solutions",
+    "listItem1": "We create IT solutions that work.",
+    "listItem2": "We help your business become more efficient.",
+    "listItem3": "Development of products that solve your problems.",
+    "listItem4": "Support from idea to finished software.",
+    "listItem5": "We automate processes – you focus on what matters.",
+    "button": "Discuss a Project"
+  },
+  "CollaborationSection": {
+    "title": "Ready for Collaboration?",
+    "button_joinTeam": "Join the Team",
+    "button_discussProject": "Let's Discuss the Project?"
+  },
+  "DevelopmentProcessSection": {
+    "title": "Development Process",
+    "analyticalWorkshop": {
+      "title": "Analytical Workshop",
+      "description": "We study your business, goals, and priorities. Through brainstorming, we analyze current processes and find growth points."
+    },
+    "solutionDesign": {
+      "title": "Designing",
+      "description": "Based on collected requirements, we create a concept, prototypes, and conduct UX testing of the future product or platform."
+    },
+    "development": {
+      "title": "Development",
+      "description": "Programming based on the approved design. Includes Alpha, Beta, and final release phases."
+    },
+    "testing": {
+      "title": "Testing",
+      "description": "We conduct thorough QA testing and validation to ensure the product is ready for launch."
+    },
+    "launchSupport": {
+      "title": "Launch and Support",
+      "description": "After your approval, we launch the product and manage its deployment in the cloud or local infrastructure."
+    },
+    "maintenance": {
+      "title": "Maintenance",
+      "description": "We provide technical support, bug fixes, and regular product strategy updates."
+    }
+  },
+  "CasesSection": {
+    "title": "Cases",
+    "button_moreCases": "More Cases",
+    "button_lessCases": "Hide Cases"
+  },
+  "ExtendedCasesSection": {
+    "title": "Cases",
+    "button_moreCases": "More Cases",
+    "button_lessCases": "Hide Cases",
+    "allCategories": "All"
+  },
+  "MapSection": {
+    "title": "Map"
+  },
+  "PartnerSection": {
+    "title": "Our Partners",
+    "button_becomePartner": "Partner With Us"
+  },
+  "ReviewSection": {
+    "title": "Reviews"
+  },
+  "TeamSection": {
+    "title": "Our Team",
+    "button_more": "More",
+    "button_less": "Hide",
+    "allCategories": "All",
+    "Management": "Management",
+    "DevOps": "DevOps",
+    "Fullstack": "Fullstack",
+    "Backend": "Backend",
+    "Frontend": "Frontend",
+    "UI/UX": "UI/UX",
+    "Gamedev": "Gamedev"
+  },
+  "TeamStats": {
+    "title": "Our Team in Numbers",
+    "intro": "A strong team of engineers, designers, and managers helping businesses launch and grow digital products.",
+    "experience": "Years of Combined Experience",
+    "projects": "Successful Projects",
+    "countries": "Countries with Clients",
+    "teamMembers": "Team Size",
+    "specialization": "Specialization",
+    "technologys": "Technologies"
+  },
+  "TechnologiesSection": {
+    "title": "Technology stack"
+  },
+  "ContactSection": {
+    "title": "Contacts",
+    "intro": "Reach out in any convenient way — we will discuss your goals, timeline, and collaboration format.",
+    "workingHours": {
+      "line1": "We work",
+      "from": "from",
+      "from_monday": "Monday",
+      "from_friday": "Friday",
+      "from_sunday": "Sunday",
+      "from_saturday": "Saturday",
+      "to_friday": "Friday",
+      "to_sunday": "Sunday",
+      "to_saturday": "Saturday",
+      "monday": "Monday",
+      "friday": "Friday",
+      "sunday": "Sunday",
+      "saturday": "Saturday",
+      "saturday, sunday": "Saturday, Sunday",
+      "to_days": "to",
+      "to_hours": "to",
+      "dayoff": "day-off",
+      "break": "break"
+    },
+    "callUs": "Call us",
+    "writeUs": "Write us",
+    "visitUs": "Come on in for a visit",
+    "socialMedia": "Write on social media"
+  },
+  "Footer": {
+    "grapelabTitle": "GrapeLab",
+    "description": "From concept to finished product — we create software that works.",
+    "link": {
+      "cases": "Cases",
+      "services": "Services",
+      "aboutUs": "About Us",
+      "navigation": "Navigation",
+      "team": "Team",
+      "contacts": "Contacts",
+      "blog": "Blog",
+      "advertising": "Advertising",
+      "partners": "Partners",
+      "community": "Community"
+    },
+    "privacyPolicy": "Privacy policy",
+    "TermsOfService": "Terms of service",
+    "copyright": "GrapeLab — Software Engineering Studio"
+  },
+  "BlogSection": {
+    "title": "Blog",
+    "intro": "Notes on development, product decisions, and practical experience from our team.",
+    "noPosts": "No posts in the blog yet",
+    "searchPlaceholder": "Search articles...",
+    "searchNoResults": "Nothing found for your search"
+  },
+  "BlogCard": {
+    "details": "Read more"
+  },
+  "ErrorSection": {
+    "errorMessage": "Page not found",
+    "homeLinkText": "Return to home",
+    "reloadText": "Reload page",
+    "pageNotReady": "This page is not ready yet"
+  },
+  "DevelopmentDirectionsSection": {
+    "title": "Development Directions"
+  },
+  "DevelopmentDirectionCard": {
+    "learnMore": "Learn More"
+  },
+  "TeamMemberPage": {
+    "backToTeam": "Back to team",
+    "viewProjects": "View projects",
+    "aboutSpecialist": "About the specialist",
+    "roles": "Roles",
+    "skills": "Skills",
+    "projectsParticipation": "Projects participated in",
+    "details": "Details",
+    "noProjects": "No projects have been assigned to this team member yet."
+  },
+  "Services": {
+    "intro": "We shape digital services around real business workflows: from product design and interface thinking to development, integrations, and launch.",
+    "button": "View contacts",
+    "ctaTitle": "Need a service tailored to your task?",
+    "ctaDescription": "We will outline the architecture, team setup, and next launch plan without noise or vague promises.",
+    "metrics": {
+      "services": "services",
+      "features": "key blocks",
+      "model": "Development process",
+      "modelValue": "Research, development, and launch within one team"
+    },
+    "labels": {
+      "studio": "service",
+      "scope": "includes",
+      "deliverables": "{count, plural, one {# deliverable} other {# deliverables}}"
+    },
+    "searchPlaceholder": "Search services...",
+    "searchNoResults": "Nothing found for your search"
+  },
+  "Portfolio": {
+    "heroTitle": "Portfolio",
+    "heroIntro": "Real projects, technologies, and teams behind our solutions.",
+    "team": "Development team",
+    "partner": "Partner"
+  },
+  "service": {
+    "notFound": "Page not found",
+    "internalServerError": "Internal Server Error"
+  },
+  "paging": {
+    "previous": "previous",
+    "next": "next"
+  },
+  "Common": {
+    "scrollToTop": "Back to top"
+  },
+  "Partners": {
+    "eyebrow": "Partnership with GrapeLab",
+    "title": "We build joint IT projects and applied development work with real outcomes",
+    "intro": "If you have an idea, product, challenge, research direction, or educational initiative that needs a strong technical partner, let’s discuss how to make it happen together. We are not interested in formal networking for its own sake. We prefer practical collaboration, useful experiments, and concrete results.",
+    "heroTagsLabel": "Who we are especially interested in building partnerships with",
+    "heroTags": {
+      "itCompanies": "digital_teams",
+      "startups": "startups",
+      "business": "business",
+      "productTeams": "product_teams",
+      "universities": "universities_and_labs",
+      "researchGroups": "research_groups",
+      "developers": "developers_and_engineers",
+      "experts": "experts",
+      "mentors": "mentors",
+      "communities": "tech_communities"
+    },
+    "heroPanel": {
+      "badge": "How we see this collaboration",
+      "title": "Not a formal contact, but a working space where ideas quickly turn into practical formats",
+      "description": "We treat partnership as a joint engineering path: shape the idea, test its viability, find the right collaboration model, and move it toward a useful outcome.",
+      "items": {
+        "build": {
+          "title": "Build shared context",
+          "description": "We clarify the task, the role of each side, and the value every participant should gain from the work."
+        },
+        "exchange": {
+          "title": "Connect expertise",
+          "description": "We bring engineering, product, educational, and research perspectives into one practical working plane."
+        },
+        "launch": {
+          "title": "Move into action quickly",
+          "description": "We do not get stuck in endless coordination. We look for the format from which joint work can realistically begin."
+        }
+      }
+    },
+    "cta": {
+      "primary": "Become a partner",
+      "secondary": "View cases"
+    },
+    "heroProof": {
+      "projects": {
+        "label": "Approach",
+        "value": "Not ideas for the sake of ideas, but digital solutions that can actually work",
+        "description": "We engage where something can be designed, launched, tested, and turned into a practical result."
+      },
+      "formats": {
+        "label": "Formats",
+        "value": "From joint product work to educational and research initiatives",
+        "description": "A partnership can start from a pilot, a product module, an expert exchange, a public format, or an applied experiment."
+      },
+      "dialogue": {
+        "label": "Principle",
+        "value": "Open engineering dialogue and interest in long-term collaboration",
+        "description": "We care less about one-off formal contacts and more about relationships that grow into strong projects, teams, and new directions."
+      }
+    },
+    "heroProofSection": {
+      "eyebrow": "Our partnership approach",
+      "title": "We do not stop at introduction level. We show what strong collaboration can actually look like",
+      "sideLabel": "How it works"
+    },
+    "why": {
+      "eyebrow": "Why GrapeLab",
+      "title": "We are not only a development studio. We are a space for shared growth, exchange of expertise, and the launch of new initiatives",
+      "description": "Working with us is useful when a partner needs engineering depth, an applied task, and a team that can move from discussion to practical work quickly.",
+      "panelHint": "Scroll or switch inside the block",
+      "principleLabel": "Principle",
+      "panelNote": "The next principle replaces the current one",
+      "cards": {
+        "practicalWork": "Practice over declarations",
+        "collaboration": "Joint work",
+        "results": "Experiments with value",
+        "environment": "Long horizon"
+      },
+      "items": {
+        "practicalWork": {
+          "title": "Practical mindset",
+          "description": "We value action over formal partnership language: research, MVPs, services, digital modules, events, and applied pilots."
+        },
+        "collaboration": {
+          "title": "Joint engineering work",
+          "description": "What matters to us is not only expertise on paper, but a willingness to build something together and discuss architecture, scenarios, constraints, and growth opportunities."
+        },
+        "results": {
+          "title": "Openness to experiments",
+          "description": "We are open to non-standard challenges, new formats, and tested hypotheses when there is real practical value behind them."
+        },
+        "environment": {
+          "title": "Focus on long-term collaboration",
+          "description": "The strongest partnerships are the ones that evolve into repeatable practices, stable connections, and new shared projects."
+        }
+      }
+    },
+    "formats": {
+      "eyebrow": "Collaboration formats",
+      "title": "Directions in which we can work together",
+      "description": "This page should answer immediately what partnership with GrapeLab can look like. That is why we show concrete working formats instead of abstract partnership language.",
+      "items": {
+        "technology": {
+          "label": "01",
+          "title": "Technology partnership",
+          "description": "Joint development of products, modules, services, MVPs, and digital platforms."
+        },
+        "education": {
+          "label": "02",
+          "title": "Educational collaboration",
+          "description": "Open lectures, workshops, mentoring, internships, and joint educational projects."
+        },
+        "research": {
+          "label": "03",
+          "title": "Research and engineering initiatives",
+          "description": "Applied research, pilots, hypothesis testing, and exchange of engineering practice."
+        },
+        "business": {
+          "label": "04",
+          "title": "Business partnership",
+          "description": "Building solutions around company goals, digitalizing processes, and running joint product experiments."
+        },
+        "experts": {
+          "label": "05",
+          "title": "Expert community",
+          "description": "Involving practitioners, consultants, architects, lecturers, mentors, and domain experts."
+        },
+        "community": {
+          "label": "06",
+          "title": "Event and community collaboration",
+          "description": "Hackathons, meetups, round tables, technology discussions, networking, and shared public formats."
+        }
+      }
+    },
+    "audience": {
+      "eyebrow": "Who this is for",
+      "title": "We are open to collaboration with people and teams that need a strong technical environment and practical outcomes",
+      "description": "This block removes friction: the reader can quickly see whether this page is about them and in what context the conversation can start.",
+      "items": {
+        "itCompanies": "IT companies and digital teams",
+        "startups": "Startups",
+        "business": "Businesses that need digital solutions",
+        "universities": "Universities and educational initiatives",
+        "experts": "Experts, mentors, and engineers",
+        "communities": "Technology communities and research groups"
+      }
+    },
+    "benefits": {
+      "eyebrow": "What the partner gets",
+      "title": "Collaboration should be not only interesting, but useful",
+      "items": {
+        "projects": {
+          "title": "Access to joint projects",
+          "description": "A partnership can grow into a product build, a pilot, an initiative, or an ongoing working relationship."
+        },
+        "expertise": {
+          "title": "Access to engineering expertise",
+          "description": "You work with developers and specialists who know how to translate an idea into a working system."
+        },
+        "testing": {
+          "title": "A way to test ideas in a real environment",
+          "description": "Hypotheses, approaches, and scenarios can be tested in an applied context instead of staying abstract."
+        },
+        "knowledge": {
+          "title": "Exchange of knowledge and practice",
+          "description": "Both sides grow stronger through shared experience, tools, approaches, and engineering thinking."
+        },
+        "initiatives": {
+          "title": "Participation in educational and research initiatives",
+          "description": "This can take the form of lectures, mentoring, joint programs, applied research, or engineering experiments."
+        },
+        "growth": {
+          "title": "New connections and growth points",
+          "description": "Strong partnerships expand the professional environment, strengthen products, and open new directions."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "How collaboration starts",
+      "title": "The first step should feel simple and clear",
+      "description": "We try not to overcomplicate the start. First we understand the task and points of intersection, then we quickly turn the conversation into a concrete working format.",
+      "items": {
+        "idea": {
+          "title": "You share the idea, challenge, or preferred format",
+          "description": "We only need enough context to understand the goal and what you want to achieve through collaboration."
+        },
+        "alignment": {
+          "title": "We discuss where interests and capabilities intersect",
+          "description": "Together we identify what each side can bring and what a realistic joint result could look like."
+        },
+        "format": {
+          "title": "We choose the right collaboration format",
+          "description": "That can mean development, a pilot, an educational activity, research, expert support, or another suitable format."
+        },
+        "launch": {
+          "title": "We launch the joint work, pilot, or initiative",
+          "description": "We agree on the next practical step and move from the idea stage into real execution."
+        }
+      }
+    },
+    "trust": {
+      "eyebrow": "Trust and structure",
+      "title": "Partnership with us is built on engineering discipline and a live working dialogue",
+      "items": {
+        "projects": {
+          "value": "Specific directions for joint work",
+          "description": "The reader sees who this partnership is for, what format it can take, and what kind of result can come out of it."
+        },
+        "formats": {
+          "value": "Practical logic and engineering specificity",
+          "description": "We do not talk about collaboration in generic corporate language. We talk in terms of tasks, formats, processes, and outcomes."
+        },
+        "dialogue": {
+          "value": "Openness to strong ideas and non-standard formats",
+          "description": "If a partner has a useful idea or initiative, we are ready to move from conversation to implementation quickly."
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Shall we discuss what useful work we can build together?",
+      "button": "Contact us"
+    }
+  },
+  "Advertising": {
+    "eyebrow": "Advertising in our products",
+    "title": "Place advertising inside GrapeLab websites, apps, and digital products",
+    "intro": "If your audience lives in digital products, we can place advertising inside GrapeLab-owned platforms: websites, mobile apps, game mechanics, and custom product surfaces. We shape the placement model around the task, context, and product flow instead of forcing a generic media package.",
+    "heroTags": {
+      "products": "Websites, apps, games, and special projects",
+      "native": "Native and classic ad formats",
+      "analytics": "Placement planning and clear reporting"
+    },
+    "cta": {
+      "primary": "Discuss placement",
+      "secondary": "View cases"
+    },
+    "stats": {
+      "inventoryLabel": "Inventory",
+      "inventoryValue": "Owned digital placements",
+      "inventoryDescription": "Advertising inside products we design and maintain ourselves, without extra intermediaries or fragmented approvals.",
+      "modelsLabel": "Formats",
+      "modelsValue": "From banners to deep product integrations",
+      "modelsDescription": "We choose the placement format according to context: standard display blocks, special placements, native inserts, or partnership mechanics.",
+      "supportLabel": "Support",
+      "supportValue": "Packaging, creative adaptation, and launch support",
+      "supportDescription": "If needed, we help structure the offer, adapt the message to the product environment, and prepare a launch scenario that fits the platform."
+    },
+    "formats": {
+      "eyebrow": "Where placements can appear",
+      "title": "Advertising formats aligned with product logic and audience behavior",
+      "description": "We are not limited to one ad slot. We choose the touchpoint where the integration feels natural and does not break the user experience.",
+      "items": {
+        "websites": {
+          "label": "01",
+          "title": "Websites and web services",
+          "description": "Banner zones, native inserts, partner cards, and placements inside content or service-oriented sections."
+        },
+        "apps": {
+          "label": "02",
+          "title": "Mobile applications",
+          "description": "Placements inside app screens, branded screens, CTA blocks, partner cards, and scenario-based integrations."
+        },
+        "games": {
+          "label": "03",
+          "title": "Games and gamified mechanics",
+          "description": "Brand integration into gameplay, reward-based mechanics, branded levels, and narrative touchpoints."
+        },
+        "special": {
+          "label": "04",
+          "title": "Special projects and custom placements",
+          "description": "When a standard slot is too limited, we design a dedicated mechanic or interface around the partner objective."
+        }
+      }
+    },
+    "models": {
+      "eyebrow": "Commercial models",
+      "title": "We structure the placement model around the goal, not only the format",
+      "description": "A campaign can start with a fixed placement, a performance-oriented model, or a deeper product integration. Terms depend on the product, the audience, and the interaction scenario.",
+      "items": {
+        "native": {
+          "title": "Native integration",
+          "description": "We embed the brand message into the user journey so it feels like part of the product instead of an unrelated banner."
+        },
+        "fixed": {
+          "title": "Fixed placement",
+          "description": "Useful when you need a clear position, a fixed launch period, and stable visibility on a selected surface."
+        },
+        "performance": {
+          "title": "Result-oriented model",
+          "description": "For some campaigns we can discuss conditions tied to reach, actions, or another measurable business objective."
+        },
+        "partnership": {
+          "title": "Partnership setup",
+          "description": "If the task requires a longer cycle, we can shape a joint mechanic that includes both product and marketing logic."
+        }
+      }
+    },
+    "advantages": {
+      "eyebrow": "Why this works with us",
+      "title": "We are not only the placement owner, we are also the product team",
+      "description": "Because we build and maintain these digital products ourselves, we can discuss the whole interaction scenario instead of just selling a banner slot.",
+      "items": {
+        "audience": {
+          "title": "Contextual audience",
+          "description": "The advertising appears inside a digital environment where users are already engaged with a task, flow, or content."
+        },
+        "control": {
+          "title": "Flexible integration depth",
+          "description": "We can discuss not only existing slots, but also interface changes, display logic, and deeper integration points."
+        },
+        "production": {
+          "title": "Product and technical team nearby",
+          "description": "If needed, we can quickly adapt the placement, create a new mechanic, and align implementation without a long chain of contractors."
+        },
+        "reporting": {
+          "title": "Clear communication",
+          "description": "We define the format, terms, touchpoints, and evaluation logic before launch so expectations stay aligned."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "How we launch",
+      "title": "A practical workflow without unnecessary bureaucracy",
+      "description": "We start from the task and the product context, then propose a realistic placement model instead of sending a generic media kit.",
+      "items": {
+        "inventory": {
+          "title": "Choose the product and touchpoints",
+          "description": "We identify the product and the user scenario where the integration will feel relevant and effective."
+        },
+        "proposal": {
+          "title": "Define the format and terms",
+          "description": "We lock the placement type, campaign scope, material requirements, timing, and how the result will be evaluated."
+        },
+        "launch": {
+          "title": "Launch and support",
+          "description": "We prepare the integration, validate the product flow, launch the placement, and stay in touch during the campaign."
+        }
+      }
+    },
+    "finalCta": {
+      "eyebrow": "Next step",
+      "title": "Let’s discuss the brand, audience, and campaign goals",
+      "description": "After that, we will suggest the right product, integration format, and placement scenario.",
+      "focus": {
+        "brand": "Brand",
+        "audience": "Audience",
+        "goals": "Campaign goals"
+      },
+      "button": "Contact us"
+    }
+  },
+  "Community": {
+    "eyebrow": "GrapeLab Community",
+    "title": "An open IT community for those who want to grow, connect, and build things together",
+    "intro1": "We are building a community that grew from a student environment but is open to everyone who cares about technology, practice, knowledge sharing, and joint initiatives.",
+    "intro2": "This is a space to find like-minded people, join projects, share knowledge, and be part of a living professional environment.",
+    "cta": {
+      "primary": "Go to the community",
+      "secondary": "See what's inside"
+    },
+    "heroSide": {
+      "label": "What it gives",
+      "note": "A living community, not a formal contact"
+    },
+    "about": {
+      "title": "Not just a community, but an environment for growth through participation",
+      "text": "We want a living environment to form around GrapeLab where people can meet, discuss ideas, join initiatives, launch collaborative projects, and grow not alone but alongside others.",
+      "panelLabel": "Environment core",
+      "manifesto": "Growth begins where there are people, ideas, practice, and room to participate",
+      "pillar1": "an entry point into a strong community",
+      "pillar2": "experience exchange and live interaction",
+      "pillar3": "space for your own initiatives",
+      "pillar4": "the opportunity to grow with others"
+    },
+    "who": {
+      "title": "Who can become part of the community",
+      "text": "We do not limit the community to students only. We are interested in people with different levels of experience and roles, as long as they care about growth, technology, knowledge sharing, and participation in a living environment.",
+      "role1": "students",
+      "role2": "early-career specialists",
+      "role3": "developers",
+      "role4": "designers",
+      "role5": "analysts",
+      "role6": "managers",
+      "role7": "teachers",
+      "role8": "mentors",
+      "role9": "practicing experts",
+      "role10": "anyone interested in IT growth",
+      "role11": "QA engineers",
+      "role12": "technical writers",
+      "role13": "researchers"
+    },
+    "benefits": {
+      "title": "What participation in the community gives you",
+      "item1": "a strong circle and new connections",
+      "item2": "experience and knowledge exchange",
+      "item3": "involvement in initiatives and collaborative projects",
+      "item4": "space for your own ideas",
+      "item5": "the opportunity to find a team or allies",
+      "item6": "growth through practice, not just theory"
+    },
+    "activities": {
+      "title": "What happens inside the community",
+      "item1": "joint projects",
+      "item2": "discussing ideas and initiatives",
+      "item3": "meetups and live communication",
+      "item4": "peer experience sharing",
+      "item5": "educational formats",
+      "item6": "mentoring support",
+      "item7": "applied research",
+      "item8": "launching new internal initiatives",
+      "item9": "contributing to community development"
+    },
+    "join": {
+      "title": "How to get involved",
+      "text": "You do not need to arrive with a finished project or extensive experience. There are many ways to participate — depending on your interest, level, and readiness to engage.",
+      "role1": "as a community member",
+      "role2": "as someone with an idea",
+      "role3": "as a future project participant",
+      "role4": "as a mentor or guide",
+      "role5": "as an expert ready to share knowledge",
+      "role6": "as an organizer or activity initiator",
+      "role7": "as a partner who wants to support the environment"
+    },
+    "why": {
+      "title": "Why this matters to us",
+      "text1": "GrapeLab is not only about development and projects. We care about building an environment where connections, ideas, practice, joint initiatives, and growth opportunities emerge for people who are drawn to technology and moving forward.",
+      "text2": "We want a living community to exist alongside the studio — one where you can not just observe, but participate, grow, and be part of something bigger."
+    },
+    "finalCta": {
+      "title": "Want to become part of the GrapeLab community?",
+      "text": "Visit the community website to learn more, explore participation formats, join community life, and find your place in this environment.",
+      "primary": "Go to the community",
+      "secondary": "Propose an initiative"
+    }
+  },
+  "Layout": {
+    "description": "A laboratory that provides IT solutions that work"
+  }
+}

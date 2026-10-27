@@ -1,0 +1,225 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator nextAdmin {
+  provider = "next-admin-generator-prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Review {
+  id            Int      @id @default(autoincrement())
+  fullname      String
+  rate          Int      @db.SmallInt
+  description   String?  @db.Text
+  userPosition  String?
+  datetime      DateTime
+  userLocale    String   @default("ru") @map("user_locale")
+  addedBy       User     @relation(fields: [addedByUserId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  addedByUserId Int      @map("added_by_user_id")
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+  imagePath     String?  @map("image_path")
+
+  @@map("reviews")
+}
+
+model Project {
+  id          Int      @id @default(autoincrement())
+  rawName     String?  @unique @map("raw_name")
+  imagePath   String?  @map("image_path")
+  startDate   DateTime @map("start_date") @db.Date
+  isVisible   Boolean  @map("is_visible")
+  partnerId   Int?     @map("partner_id")
+  directionId Int?     @map("direction_id")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  aspectsList      Json?   @map("aspects_list")
+  galleryImages    Json?   @map("gallery_images")
+  projectTechStack Json?   @map("project_tech_stack")
+
+  partner   Partner?          @relation(fields: [partnerId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  direction DevDirection?     @relation(fields: [directionId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  employees ProjectEmployee[]
+
+  @@map("projects")
+}
+
+model Partner {
+  id        Int      @id @default(autoincrement())
+  name      String?
+  imagePath String?  @map("image_path")
+  url       String?
+  isVisible Boolean? @map("is_visible")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  projects Project[]
+
+  @@map("partners")
+}
+
+model DevDirection {
+  id           Int      @id @default(autoincrement())
+  shortName    String?  @map("short_name")
+  rawName      String   @unique @map("raw_name") // ключ для получения локализации
+  durationDays Int      @map("duration_days")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+  imagePath    String?  @map("image_path")
+
+  projects Project[]
+
+  @@map("devdirections")
+}
+
+model Employee {
+  id              Int       @id @default(autoincrement())
+  firstName       String    @map("first_name")
+  lastName        String    @map("last_name")
+  imagePath       String?   @map("image_path")
+  tags            String?
+  birthDate       DateTime? @map("birth_date") @db.Date
+  isVisible       Boolean   @map("is_visible")
+  email           String?
+  role            String?
+  nickname        String
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+
+  projects ProjectEmployee[]
+
+  @@map("employees")
+}
+
+model ProjectEmployee {
+  id         Int @id @default(autoincrement()) 
+  projectId  Int @map("project_id")
+  employeeId Int @map("employee_id")
+
+  project  Project  @relation(fields: [projectId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  employee Employee @relation(fields: [employeeId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@unique([projectId, employeeId])  // ← было @@id, стало @@unique
+  @@map("projects_employees")
+}
+
+model Localization {
+  id         Int      @id @default(autoincrement())
+  section    String   @map("section")
+  rawName    String   @map("raw_name")
+  localeCode String   @map("locale_code")
+  content    String
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  @@unique([section, rawName, localeCode])
+  @@index([rawName, section], name: "localizations_index")
+  @@map("localizations")
+}
+
+model RefTable {
+  name      String   @id @unique
+  content   Json
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("ref_tables")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  fullname  String
+  isStaff   Boolean  @default(true) @map("is_staff")
+  pwdhash   String
+  email     String   @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  reviews Review[]
+
+  @@map("users")
+}
+
+model DynamicTranslationBuffer {
+  id                  Int    @id @default(autoincrement())
+  scope               String
+  sourceId            Int    @map("source_id")
+  localeCode          String @map("locale_code")
+  message             String @db.Text
+  originalMessageHash String @map("message_hash")
+
+  @@map("dynamic_translations")
+  @@unique([scope, sourceId, localeCode], name: "unique_scope_source_locale")  //more of lang
+  @@index([scope], name: "dynamic_translations_index")
+}
+
+model Service {
+  id          Int      @id @default(autoincrement())
+  rawName     String   @unique @map("raw_name")
+  isVisible   Boolean  @default(true) @map("is_visible")
+  sortOrder   Int      @default(0) @map("sort_order")
+  imagePath   String?  @map("service_image_path")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  features ServiceFeature[]
+
+  @@map("services")
+}
+
+model ServiceFeature {
+  id        Int      @id @default(autoincrement())
+  serviceId Int      @map("service_id")
+  rawName   String   @map("raw_name")
+  sortOrder Int      @default(0) @map("sort_order")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  service Service @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+
+  @@map("service_features")
+}
+
+model BlogPost {
+  id              Int      @id @default(autoincrement())
+  rawName         String?  @unique @map("raw_name")
+  title           String
+  excerpt         String   @db.Text
+  content         String   @db.Text
+  bannerImagePath String?  @map("banner_image_path")
+  publishedAt     DateTime @map("published_at")
+  isVisible       Boolean  @default(true) @map("is_visible")
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+
+  @@map("blog_posts")
+}
+
+model AdminAuditLog {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @map("created_at")
+  event     String
+  email     String?
+  source    String
+
+  @@map("admin_audit_logs")
+}
+
+model AdminRateLimit {
+  key             String    @id
+  count           Int       @default(0)
+  windowStartedAt DateTime  @map("window_started_at")
+  blockedUntil    DateTime? @map("blocked_until")
+  blockCount      Int       @default(0) @map("block_count")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+
+  @@map("admin_rate_limits")
+}

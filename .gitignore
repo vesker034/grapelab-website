@@ -1,0 +1,84 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# env
+*.env
+.vscode/
+/src/generated/prisma
+.adminjs/
+public/uploads
+prisma/migrations/migration_lock.toml
+
+#IDE
+.idea
+.code
+.claude
+CLAUDE.md
+
+#SEO
+public/sitemap.xml
+public/robots.txt
+
+# local project memory
+USER_MEMORY.md
+PROJECT_MEMORY.md
+
+# test blog scripts
+src/scripts/create_test_blog_post.ts
+src/scripts/create_test_blog_post_2.ts
+# Local secrets and databases
+.env*
+!.env.example
+*.sqlite
+*.sqlite3
+*.db
+*.pem
+*.key
+*.p12
+*.pfx
+# Local tooling and generated output
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.next/
+dist/
+build/
+coverage/
+*.tsbuildinfo

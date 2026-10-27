@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Controller body -->
+  <path d="M160 192 C100 192 56 236 48 296 L32 400 C28 424 48 440 68 432 C88 424 96 408 116 400 L160 384 L352 384 L396 400 C416 408 424 424 444 432 C464 440 484 424 480 400 L464 296 C456 236 412 192 352 192 Z" stroke="#D0D0D0" stroke-width="20" stroke-linejoin="round"/>
+  <!-- Left D-pad vertical -->
+  <line x1="148" y1="248" x2="148" y2="320" stroke="#D0D0D0" stroke-width="20" stroke-linecap="round"/>
+  <!-- Left D-pad horizontal -->
+  <line x1="112" y1="284" x2="184" y2="284" stroke="#D0D0D0" stroke-width="20" stroke-linecap="round"/>
+  <!-- Right buttons -->
+  <circle cx="340" cy="260" r="14" stroke="#D0D0D0" stroke-width="16"/>
+  <circle cx="372" cy="288" r="14" stroke="#D0D0D0" stroke-width="16"/>
+  <circle cx="308" cy="288" r="14" stroke="#D0D0D0" stroke-width="16"/>
+  <circle cx="340" cy="316" r="14" stroke="#D0D0D0" stroke-width="16"/>
+  <!-- Left bumper -->
+  <path d="M168 192 C172 168 196 152 220 152 L256 148 L292 152 C316 152 340 168 344 192" stroke="#D0D0D0" stroke-width="18" stroke-linecap="round"/>
+  <!-- Center button -->
+  <circle cx="256" cy="284" r="20" stroke="#D0D0D0" stroke-width="16"/>
+</svg>
